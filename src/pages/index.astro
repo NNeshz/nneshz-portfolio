@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navigation from "../components/global/Navigation.astro";
+
+import Hero from "../components/landing/Hero.astro";
+import Testimonial from "../components/global/Testimonial.astro";
+import Contact from "../components/global/Contact.astro";
+import Footer from "../components/global/Footer.astro";
+import { AstroSeo } from "@astrolib/seo";
+import About from "../components/landing/About.astro";
+import Projects from "../components/landing/Projects.astro";
+---
+
+<!---
+Use AstroSeo in all the pages you want different Seo than the index page
+-->
+<AstroSeo
+  title="NNeshz Developer"
+  description="NNeshz Developer is a full-stack developer with 1 years of experience in web development."
+  twitter={{
+    handle: "@NNeshz",
+    cardType: "summary_large_image",
+  }}
+/>
+<BaseLayout>
+  <Navigation />
+  <Hero />
+
+  <Projects />
+  <Testimonial />
+  <About />
+  <Contact />
+  <Footer />
+</BaseLayout>
