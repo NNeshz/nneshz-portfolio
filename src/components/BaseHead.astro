@@ -4,11 +4,35 @@ import { AstroSeo } from "@astrolib/seo";
 ---
 
 <AstroSeo
-  title="nneshz"
+  title="NNeshz Developer"
   description="Neftali Hernández, Full Stack Developer, here you can find my projects, stack and more."
+  canonical="https://nneshz.vercel.app/"
+  openGraph={{
+    url: "https://nneshz.vercel.app/",
+    title: "NNeshz Developer",
+    description:
+      "Neftali Hernández, Full Stack Developer, here you can find my projects, stack and more.",
+    images: [
+      {
+        url: "https://pbs.twimg.com/media/GUU_keMWoAAqu1X?format=jpg&name=large",
+        width: 1320,
+        height: 1080,
+        alt: "NNeshz Developer Portfolio",
+        type: "image/jpeg",
+      },
+      {
+        url: "https://pbs.twimg.com/media/GUU_keMWoAAqu1X?format=jpg&name=large",
+        width: 1920,
+        height: 1080,
+        alt: "NNeshz Developer Portfolio",
+        type: "image/jpeg",
+      },
+    ],
+    site_name: "NNeshz Developer",
+  }}
   twitter={{
     handle: "@nneshz",
-    site: "@nneshz",
+    site: "https://x.com/NNeshz",
     cardType: "summary_large_image",
   }}
 />
