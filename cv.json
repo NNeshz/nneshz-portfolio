@@ -1,0 +1,73 @@
+{
+  "experience": {
+    "sectionLabel": "Work experience",
+    "jobs": [
+      {
+        "company": "Exxpress",
+        "position": "Software Engineer",
+        "startDate": "2024-02-01",
+        "endDate": "2024-04-01",
+        "summary": "I worked at Exxpress team, where I helped build the web dashboard. I was responsible for UI/UX and API requests, which involved to learn Elysia.js and Firebase, use Radix and develop a better user experience.",
+        "highlights": [
+          "Using Shandcn to improve user experience and forms",
+          "Learning Elysia.js and Firebase to handle API requests",
+          "Understanding other developers' code structure and working in a team"
+        ]
+      }
+    ]
+  },
+  "stack": {
+    "sectionLabel": "My stack",
+    "logos": [
+      { "src": "/logos/astro.svg", "alt": "AstroJS Logo" },
+      { "src": "/logos/next.svg", "alt": "Next Logo" },
+      { "src": "/logos/tailwindcss.svg", "alt": "TailwindCSS Logo" },
+      { "src": "/logos/vercel.svg", "alt": "Vercel Logo" },
+      { "src": "/logos/typescript.svg", "alt": "TypeScript Logo" },
+      { "src": "/logos/css.svg", "alt": "CSS Logo" },
+      { "src": "/logos/prisma.svg", "alt": "Prisma Logo" },
+      { "src": "/logos/html5.svg", "alt": "HTML Logo" },
+      { "src": "/logos/figma.svg", "alt": "Figma Logo" },
+      { "src": "/logos/express.svg", "alt": "Express Logo" }
+    ]
+  },
+  "personalProjects": {
+    "sectionLabel": "Personal projects",
+    "projects": [
+      {
+        "name": "Octo 🤖",
+        "description": "This is a project made for the Midudev Hackathon. It is a web app that allows you to make reviews of your pull requests and send the comments to the GitHub repository to save time and improve the code review process.",
+        "imageUrl": "/assets/octo.png",
+        "projectSocials": [
+          {
+            "network": "GitHub",
+            "label": "GitHub",
+            "url": "https://github.com/JorgeRojas827/octo"
+          },
+          {
+            "network": "Demo",
+            "label": "Demo",
+            "url": "https://www.octo.lat/"
+          }
+        ]
+      },
+      {
+        "name": "Short URL 🔗",
+        "description": "Trying to improve my skills as Full Stack, I made this project to shorten URLs. It is a simple project, but it helped me to understand many concepts, and inprove my skills with Shadcn and TailwindCSS.",
+        "imageUrl": "/assets/url.png",
+        "projectSocials": [
+          {
+            "network": "GitHub",
+            "label": "GitHub",
+            "url": "https://github.com/NNeshz/url-shorter"
+          },
+          {
+            "network": "Demo",
+            "label": "Demo",
+            "url": "https://neshzurl.vercel.app/"
+          }
+        ]
+      }
+    ]
+  }
+}

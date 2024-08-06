@@ -12,7 +12,11 @@
   "dependencies": {
     "@astrojs/check": "^0.9.1",
     "@astrojs/tailwind": "^5.1.0",
+    "@astrolib/seo": "1.0.0-beta.5",
+    "@fontsource-variable/inter-tight": "^5.0.21",
+    "@tailwindcss/typography": "^0.5.13",
     "astro": "^4.13.1",
+    "tailwind-scrollbar-hide": "^1.1.7",
     "tailwindcss": "^3.4.7",
     "typescript": "^5.5.4"
   }
