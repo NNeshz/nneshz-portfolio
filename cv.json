@@ -36,7 +36,7 @@
     "projects": [
       {
         "name": "Octo 🤖",
-        "description": "This is a project made for the Midudev Hackathon. It is a web app that allows you to make reviews of your pull requests and send the comments to the GitHub repository to save time and improve the code review process.",
+        "description": "This is a project made for the Midudev Hackathon. Allows you to make reviews of your pull requests and send the comments to the GitHub repository to save time and improve the code review process.",
         "imageUrl": "/assets/octo.png",
         "projectSocials": [
           {

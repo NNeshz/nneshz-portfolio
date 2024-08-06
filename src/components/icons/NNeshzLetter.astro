@@ -1,14 +1,24 @@
+---
+interface NNeshzLetterProps {
+  className?: string;
+  fill?: string;
+  stroke?: string;
+}
+
+const { className, fill, stroke }: NNeshzLetterProps = Astro.props;
+---
+
 <svg
   version="1.0"
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 2346.000000 446.000000"
   preserveAspectRatio="xMidYMid meet"
-  class="w-full top-0 left-0 z-0"
+  class={className}
 >
   <g
     transform="translate(0.000000,446.000000) scale(0.100000,-0.100000)"
-    fill="none"
-    stroke="#000"
+    fill={fill}
+    stroke={stroke}
     stroke-width="5"
   >
     <path
