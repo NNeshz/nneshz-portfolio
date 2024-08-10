@@ -3,6 +3,8 @@ export const languages = {
   en: "English",
 };
 
+export type UIKey = string | string[] | Record<string, any>;
+
 export const languagesPicker = {
   es: {
     label: "Español",

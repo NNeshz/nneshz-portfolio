@@ -1,8 +1,10 @@
 ---
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import type { UIKey } from "@/i18n/ui";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const workDots = t("work.dots") as UIKey[];
 ---
 
 <div class="max-w-xl p-10 flex flex-col gap-5 bg-background rounded-[1rem]">
@@ -28,7 +30,7 @@ const t = useTranslations(lang);
     </p>
     <ul class="list-disc">
       {
-        t("work.dots").map((highlight: string) => (
+        workDots.map((highlight) => (
           <li class="text-muted-foreground text-xs sm:text-sm md:text-normal">
             {highlight}
           </li>
