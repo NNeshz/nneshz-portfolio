@@ -1,3 +1,10 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <div class="fixed top-4 inset-x-0 z-50">
   <div class="max-w-4xl mx-auto px-8 md:px-0">
     <div class="w-full mx-auto">
@@ -51,14 +58,18 @@
           >
             <li>
               <a href="#experience" class="hover:text-black shrink-0"
-                >EXPERIENCE</a
+                >{t("nav.experience")}</a
               >
             </li>
             <li>
-              <a href="#projects" class="hover:text-black shrink-0">PROJECTS</a>
+              <a href="#projects" class="hover:text-black shrink-0"
+                >{t("nav.projects")}</a
+              >
             </li>
             <li>
-              <a href="#contact" class="hover:text-black shrink-0">CONTACT</a>
+              <a href="#contact" class="hover:text-black shrink-0"
+                >{t("nav.contact")}</a
+              >
             </li>
             <li class="shrink-0">
               <a

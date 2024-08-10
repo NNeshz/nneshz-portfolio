@@ -4,11 +4,16 @@ import cv from "@cv";
 import ExperiencCard from "../global/ExperienceCard.astro";
 
 const {
-  experience: { sectionLabel, jobs },
+  experience: { jobs },
 } = cv;
+
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<Section sectionLabel={sectionLabel} id="experience">
+<Section sectionLabel={t("work.title")} id="experience">
   <div class="flex flex-col gap-5 pointer-events-auto">
     {jobs.map((exp) => <ExperiencCard {...exp} />)}
   </div>

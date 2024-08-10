@@ -1,19 +1,32 @@
 ---
 import Image from "astro/components/Image.astro";
 import Section from "../global/Section.astro";
-import cv from "@cv";
 
-const {
-  personalProjects: { sectionLabel, projects },
-} = cv;
+interface IProject {
+  name: string;
+  description: string;
+  imageUrl: string;
+  projectSocials: [
+    {
+      network: string;
+      label: string;
+      url: string;
+    },
+  ];
+}
+
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<Section sectionLabel={sectionLabel} id="projects">
+<Section sectionLabel={t("projects.section")} id="projects">
   <div
     class="grid grid-cols-1 md:grid-cols-2 justify-center gap-8 p-4 md:px-0 max-w-4xl"
   >
     {
-      projects.map((project) => {
+      t("projects").map((project: IProject) => {
         return (
           <div class="flex flex-col gap-y-4">
             <h3 class="text-2xl font-bold text-foreground">{project.name}</h3>

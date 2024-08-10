@@ -3,8 +3,13 @@ import cv from "@cv";
 import Image from "astro/components/Image.astro";
 
 const {
-  stack: { sectionLabel, logos },
+  stack: { logos },
 } = cv;
+
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section
@@ -13,7 +18,7 @@ const {
   <h2
     class="absolute top-[-20px] h-10 flex items-center px-4 py-1 rounded-full text-foreground text-sm sm:text-normal md:text-lg tracking-tighter bg-white shadow-md"
   >
-    {sectionLabel}
+    {t("stack.title")}
   </h2>
   <div
     class="w-full h-fit max-w-3xl flex flex-col justify-center select-none overflow-hidden gradient"

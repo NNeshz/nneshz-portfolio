@@ -1,21 +1,28 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section class="my-28" id="contact">
   <div class="px-8 md:px-0 max-w-4xl mx-auto">
     <div class="h-full bg-black rounded-3xl text-center overflow-hidden p-8">
       <h2 class="text-5xl tracking-tighter font-normal md:text-4xl text-white">
-        Ready to <span
+        {t("contact.title.1")}
+        <span
           class="md:block bg-gradient-to-r from-blue-700 to-yellow-300 bg-clip-text text-transparent"
-          >collaborate and create?</span
+          >{t("contact.title.2")}</span
         >
       </h2>
       <p class="mt-4 text-base text-zinc-300 max-w-sm mx-auto">
-        I'm here to bring your ideas to life with creativity and precision.
-        Let's connect and explore the possibilities.
+        {t("contact.description")}
       </p>
       <div class="flex mt-8 justify-center">
         <a
           href="mailto:nneftahdez@gmail.com"
           class="rounded-xl px-4 border py-2 font-semibold transition-all flex items-center justify-between w-auto bg-white hover:text-white hover:bg-black duration-200"
-          >Send an email
+          >{t("contact.button")}
         </a>
       </div>
     </div>
