@@ -54,7 +54,7 @@
       {
         "name": "Short URL 🔗",
         "description": "Trying to improve my skills as Full Stack, I made this project to shorten URLs. It is a simple project, but it helped me to understand many concepts, and inprove my skills with Shadcn and TailwindCSS.",
-        "imageUrl": "/assets/short.webp",
+        "imageUrl": "/assets/url.webp",
         "projectSocials": [
           {
             "network": "GitHub",
