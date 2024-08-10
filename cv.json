@@ -37,7 +37,7 @@
       {
         "name": "Octo 🤖",
         "description": "This is a project made for the Midudev Hackathon. Allows you to make reviews of your pull requests and send the comments to the GitHub repository to save time and improve the code review process.",
-        "imageUrl": "/assets/octo.png",
+        "imageUrl": "/assets/octo.webp",
         "projectSocials": [
           {
             "network": "GitHub",
@@ -54,7 +54,7 @@
       {
         "name": "Short URL 🔗",
         "description": "Trying to improve my skills as Full Stack, I made this project to shorten URLs. It is a simple project, but it helped me to understand many concepts, and inprove my skills with Shadcn and TailwindCSS.",
-        "imageUrl": "/assets/short.png",
+        "imageUrl": "/assets/short.webp",
         "projectSocials": [
           {
             "network": "GitHub",
