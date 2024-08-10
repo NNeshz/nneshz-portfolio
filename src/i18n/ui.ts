@@ -102,7 +102,7 @@ export const ui = {
       "Currently open to exploring new professional opportunities where I can contribute my skills and experience to dynamic teams and challenging projects. Let's connect to discuss how we can work together to achieve excellence.",
     "hero.quote":
       "Programming is the easiest way to understand how things work.",
-    "heor.quoteAuthor": "Chris Pine",
+    "hero.quoteAuthor": "Chris Pine",
     "work.title": "Work Experience",
     "work.company": "Exxpress",
     "work.position": "Full Stack Developer",
