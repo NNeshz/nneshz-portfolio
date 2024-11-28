@@ -1,5 +1,5 @@
 ---
-import Image from "astro/components/Image.astro";
+import { Image } from "astro:assets";
 import Section from "../global/Section.astro";
 
 interface IProject {
@@ -29,7 +29,13 @@ const projects = t("projects") as IProject[];
     {
       projects.map((project) => {
         return (
-          <div class="flex flex-col gap-y-4">
+          <div class="flex flex-col gap-y-4 min-h-[300px]">
+            <img
+              src={project.imageUrl}
+              loading="eager"
+              alt={project.name}
+              class="w-full rounded-2xl h-[230px] object-cover"
+            />
             <h3 class="text-2xl font-bold text-foreground">{project.name}</h3>
             <div class="flex flex-wrap gap-4">
               {project.projectSocials.map((social) => (
@@ -59,14 +65,7 @@ const projects = t("projects") as IProject[];
               ))}
             </div>
             <p class="text-foreground">{project.description}</p>
-            <Image
-              src={project.imageUrl}
-              width={1920}
-              height={1080}
-              loading="eager"
-              alt={project.name}
-              class="w-full rounded-2xl"
-            />
+            
           </div>
         );
       })
