@@ -68,7 +68,7 @@ export const ui = {
         name: "Octo 🤖",
         description:
           "Este es un proyecto hecho para el Hackathon de Midudev. Te permite hacer revisiones de tus pull requests y enviar los comentarios al repositorio de GitHub para ahorrar tiempo y mejorar el proceso de revisión de código",
-        imageUrl: "/public/assets/octo.webp",
+        imageUrl: "/assets/octo.webp",
         projectSocials: [
           {
             network: "GitHub",
@@ -87,7 +87,7 @@ export const ui = {
         description:
           "Intentando mejorar mis habilidades como Full Stack, hice este proyecto para acortar URLs. Es un proyecto simple, pero me ayudó a entender muchos conceptos y mejorar mis habilidades con Shadcn y TailwindCSS",
 
-        imageUrl: "/public/assets/url.webp",
+        imageUrl: "/assets/url.webp",
         projectSocials: [
           {
             network: "GitHub",
@@ -155,7 +155,7 @@ export const ui = {
         name: "Octo 🤖",
         description:
           "This is a project made for the Midudev Hackathon. Allows you to make reviews of your pull requests and send the comments to the GitHub repository to save time and improve the code review process.",
-        imageUrl: "/public/assets/octo.webp",
+        imageUrl: "/assets/octo.webp",
         projectSocials: [
           {
             network: "GitHub",

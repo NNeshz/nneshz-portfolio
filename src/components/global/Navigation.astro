@@ -57,12 +57,19 @@ const t = useTranslations(lang);
             class="space-y-2 list-none text-xs text-zinc-500 md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 transition-transform duration-300 ease-in-out transform md:transform-none"
           >
             <li>
-              <a href="#experience" class="hover:text-black shrink-0"
-                >{t("nav.experience")}</a
+              <a
+                href="#experience"
+                class="hover:text-black shrink-0"
+                onclick="event.preventDefault(); const experienceElement = document.getElementById('experience'); const experienceOffset = 100; const experiencePosition = experienceElement.getBoundingClientRect().top + window.scrollY; window.scrollTo({ top: experiencePosition - experienceOffset, behavior: 'smooth' });"
               >
+                {t("nav.experience")}
+              </a>
             </li>
             <li>
-              <a href="#projects" class="hover:text-black shrink-0"
+              <a
+                href="#projects"
+                class="hover:text-black shrink-0"
+                onclick="event.preventDefault(); const projectsElement = document.getElementById('projects'); const projectsOffset = 100; const projectsPosition = projectsElement.getBoundingClientRect().top + window.scrollY; window.scrollTo({ top: projectsPosition - projectsOffset, behavior: 'smooth' });"
                 >{t("nav.projects")}</a
               >
             </li>
